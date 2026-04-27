@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Student Registration</h2>
+
+
+<form method="post">
+    {%csrf_token%}
+    <label for="">Name:</label>
+    <input type="text" name="name"><br><br>
+    <label for="">USN:</label>
+    <input type="text" name="usn"><br><br>
+    <label for="">SEM:</label>
+    <input type="number" name="sem"><br><br>
+    <label for="">Subcode:</label>
+    <input type="text" name="subcode"><br><br>
+    <label for="">Sub Name:</label>
+    <input type="text" name="subname"><br><br>
+    <label for="">Credits:</label>
+    <input type="number" name="credits"><br><br>
+    <button type="submit">Register</button>
+
+</form>
+{%endblock%}

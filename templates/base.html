@@ -1,0 +1,35 @@
+{%load static%}
+<html>
+<head>
+<title>Student Portal</title>
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+<header>
+STUDENT COURSE REGISTRATION PORTAL
+</header>
+
+<nav>
+<a href="/">HOME</a>
+<a href="/studentlist/">STUDENT LIST</a>
+<a href="/courselist/">COURSE LIST</a>
+<a href="/register/">REGISTER</a>
+<a href="/enrolledlist/">ENROLLED LIST</a>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<footer>
+<hr>
+&copy; Designed and Developed by Bhavana S <br>
+
+</footer>
+
+</body>
+</html>
